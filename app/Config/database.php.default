@@ -69,10 +69,10 @@ class DATABASE_CONFIG {
 	public $default = array(
 		'datasource' => 'Database/Pstagres',
 		'persistent' => false,
-		'host' => 'postgres://vjwcvandewqwcm:771917a9d4ae9c4cfdb1e1d26da98ae3d285d6eb8e9e38f4d1d4bb179f9694d1@ec2-174-129-41-12.compute-1.amazonaws.com:5432/dlbl7btj9rov8',
-		'login' => 'omsco@icloud.com',
-		'password' => 'ugkzZ:!W-XQmS7p',
-		'database' => 'database_name',
+		'host' => 'ec2-174-129-41-12.compute-1.amazonaws.com',
+		'login' => 'vjwcvandewqwcm',
+		'password' => '771917a9d4ae9c4cfdb1e1d26da98ae3d285d6eb8e9e38f4d1d4bb179f9694d1',
+		'database' => 'dlbl7btj9rov8',
 		'prefix' => '',
 		//'encoding' => 'utf8',
 	);
