@@ -68,6 +68,8 @@ class DATABASE_CONFIG {
 
 	public $default = array(
 		'datasource' => 'Database/Pstagres',
+		'driver'   => 'postgres',
+		'connect'  => 'pg_connect',
 		'persistent' => false,
 		'host' => 'ec2-174-129-41-12.compute-1.amazonaws.com',
 		'login' => 'vjwcvandewqwcm',
