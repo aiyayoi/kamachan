@@ -73,6 +73,7 @@ class DATABASE_CONFIG {
 		'login' => 'vjwcvandewqwcm',
 		'password' => '771917a9d4ae9c4cfdb1e1d26da98ae3d285d6eb8e9e38f4d1d4bb179f9694d1',
 		'database' => 'dlbl7btj9rov8',
+		'port' => '5432',
 		'prefix' => '',
 		//'encoding' => 'utf8',
 	);
