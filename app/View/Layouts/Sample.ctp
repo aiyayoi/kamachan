@@ -25,15 +25,7 @@
 </script>
 </head>
 <body>
-  <nav><!-- ←jQueryで指定した通りnavタグで作成 -->
-		<ul>
-			<li><a href="#">HOME<span>ホーム</span></a></li>
-			<li><a href="#">SERVICE<span>サービス</span></a></li>
-			<li><a href="#">ABOUT US<span>企業概要</span></a></li>
-			<li><a href="#">SHOP LIST<span>取扱店舗一覧</span></a></li>
-			<li><a href="#">CONTACT US<span>お問い合わせ</span></a></li>
-		</ul>
-	</nav>
+
 			<?php echo $this->element('header'); ?>
 
 			<?php echo $this->Session->flash(); ?>

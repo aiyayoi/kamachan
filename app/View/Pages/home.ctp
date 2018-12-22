@@ -1,4 +1,15 @@
-
+<div class="container-fluid">
+	<div class="row">
+<nav><!-- ←jQueryで指定した通りnavタグで作成 -->
+	<ul>
+		<li><a href="#">HOME<span>ホーム</span></a></li>
+		<li><a href="#">SERVICE<span>サービス</span></a></li>
+		<li><a href="#">ABOUT US<span>企業概要</span></a></li>
+		<li><a href="#">SHOP LIST<span>取扱店舗一覧</span></a></li>
+		<li><a href="#">CONTACT US<span>お問い合わせ</span></a></li>
+	</ul>
+</nav>
+<div class="col-12">
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
@@ -57,9 +68,13 @@ aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+</div>
+</div>
+</div>
 <!-- [ スマホ用フッター電話 ] -->
 
 <div class="footer_area">
+あいうあいうあいう
 <div class="footer_area_inner"><a class="inquiry_btn" href="tel:電話番号をここに入れる"> 電話で予約する ☎電話番号をここに入れる</a></div>
 
 
