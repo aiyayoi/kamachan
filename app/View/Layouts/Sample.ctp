@@ -27,17 +27,19 @@
 
   <div class="container-fluid">
   <div class="row">
-    <div class="col-sm-2 col-md-12" style="background-color:red;">Red</div>
-    <div class="col-sm-8" style="background-color:blue;">Blue</div>
-    <div class="col-sm-2" style="background-color:yellow;">Yellow</div>
-    <button type="button" class="btn btn-default">Default</button>
+    <div class="col-2 col-sm-2 col-md-12" style="background-color:red;">Red</div>
+    <div class="col-8 col-sm-8" style="background-color:blue;">Blue</div>
+    <div class="col-2 col-sm-2" style="background-color:yellow;">Yellow</div>
+  </div>
+  <div class="row">
+<button type="button" class="btn btn-default">Default</button>
 <button type="button" class="btn btn-primary">Primary</button>
 <button type="button" class="btn btn-success">Success</button>
 <button type="button" class="btn btn-info">Info</button>
 <button type="button" class="btn btn-warning">Warning</button>
 <button type="button" class="btn btn-danger">Danger</button>
 <button type="button" class="btn btn-link">Link</button>
-  </div>
+
 </div>
 </body>
 </html>
