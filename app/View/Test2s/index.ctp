@@ -4,3 +4,5 @@
 <?php foreach($tes as $t): ?>
 <li><?php print $t['Test2']['name']; ?></li>
 <?php endforeach; ?>
+
+<?php print($this->Html->link('test', 'write')); ?>

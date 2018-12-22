@@ -9,6 +9,18 @@ class Test2sController extends AppController{
 		$this->set('tes',$test);
 	}
 
+	public function write(){
+		$this->loadModel('Test2');
+		if($this->request->is('post')){
+			$this->Test2->create();
+			if($this->Test2->save($this->request->data)){
+				$this->Flash->success('かきこ～');
+				return $this->redirect(array('action' => 'write'));
+			}
+			$this->Flash->error('エラー');
+		}
+	}
+
 
 }
 ?>
