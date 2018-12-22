@@ -2,5 +2,5 @@
 <p>MySampleData Index View</p>
 
 <?php foreach($tes as $t): ?>
-<li><?php echo $t; ?></li>
+<li><?php print $t['Test2']['name']; ?></li>
 <?php endforeach; ?>
