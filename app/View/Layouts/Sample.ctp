@@ -14,11 +14,26 @@
 	<?php
 		echo $this->Html->meta('icon');
 		echo $this->Html->css('Sample');
+    echo $this->Html->css('clingify');
+    echo $this->Html->script('jquery.clingify.js');
 		echo $scripts_for_layout;
 	?>
+  <script type="text/javascript">
+  jQuery(function() {
+  jQuery('nav').clingify();
+});
+</script>
 </head>
 <body>
-
+  <nav><!-- ←jQueryで指定した通りnavタグで作成 -->
+		<ul>
+			<li><a href="#">HOME<span>ホーム</span></a></li>
+			<li><a href="#">SERVICE<span>サービス</span></a></li>
+			<li><a href="#">ABOUT US<span>企業概要</span></a></li>
+			<li><a href="#">SHOP LIST<span>取扱店舗一覧</span></a></li>
+			<li><a href="#">CONTACT US<span>お問い合わせ</span></a></li>
+		</ul>
+	</nav>
 			<?php echo $this->element('header'); ?>
 
 			<?php echo $this->Session->flash(); ?>
@@ -27,9 +42,9 @@
 
   <div class="container-fluid">
   <div class="row">
-    <div class="col-2 col-sm-2 col-md-12" style="background-color:red;">Red</div>
-    <div class="col-8 col-sm-8" style="background-color:blue;">Blue</div>
-    <div class="col-2 col-sm-2" style="background-color:yellow;">Yellow</div>
+    <div class="col-2" style="background-color:red;">Red</div>
+    <div class="col-8" style="background-color:blue;">Blue</div>
+    <div class="col-2" style="background-color:yellow;">Yellow</div>
   </div>
   <div class="row">
 <button type="button" class="btn btn-default">Default</button>
