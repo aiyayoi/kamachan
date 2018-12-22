@@ -17,22 +17,13 @@
 	?>
 </head>
 <body>
-	<div id="container">
-		<div id="header">
-			<?php echo $this->element('header'); ?>
-		</div>
-		<div id="content">
-			<div id="leftmenu">
-				<?php echo $this->element('leftmenu'); ?>
-			</div>
-			<?php echo $this->Session->flash(); ?>
-			<div id="main">
-				<?php echo $content_for_layout; ?>
-			</div>
-		</div>
 
-		</div>
-	</div>
+			<?php echo $this->element('header'); ?>
+
+			<?php echo $this->Session->flash(); ?>
+
+				<?php echo $content_for_layout; ?>
+
   <div class="container-fluid">
   <div class="row">
     <div class="col-sm-2" style="background-color:red;">Red</div>
