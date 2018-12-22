@@ -4,7 +4,7 @@
 <?php
 	echo $this->Form->create('Test2');
 	echo $this->Form->label('name',"かく");
-	echo $this->Form->input('id');
+	echo $this->Form->text('id');
 	echo $this->Form->text('name');
 	echo $this->Form->end('登録');
 ?>
