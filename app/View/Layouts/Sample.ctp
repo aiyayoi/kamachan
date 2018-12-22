@@ -26,7 +26,7 @@
 
   <div class="container-fluid">
   <div class="row">
-    <div class="col-sm-2" style="background-color:red;">Red</div>
+    <div class="col-sm-2 col-md-12" style="background-color:red;">Red</div>
     <div class="col-sm-8" style="background-color:blue;">Blue</div>
     <div class="col-sm-2" style="background-color:yellow;">Yellow</div>
     <button type="button" class="btn btn-default">Default</button>
