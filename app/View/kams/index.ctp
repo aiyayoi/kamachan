@@ -30,11 +30,11 @@
 				echo "<strong>";
 				echo $kam['User']['name'];
 				echo "</strong></br>";
-				echo $kam['Kamatta']['body'];
+				echo $kam['Kam']['body'];
 				echo "</br>";
 				echo "<div class='row'>";
-					echo "<button type='button' class='btn col-5' id='button_don'>どんだけ</button>";
-					echo "<button type='button' class='btn col-5' id='button_don'>コメント</button>";
+					echo "<button type='button' class='btn col-5 btn-sm' id='button_don'>どんだけ</button>";
+					echo "<button type='button' class='btn col-5 btn-sm' id='button_don'>コメント</button>";
 				echo "</div>";
 			echo "</div>";
 		echo "</div>";
