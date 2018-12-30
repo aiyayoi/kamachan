@@ -5,7 +5,7 @@ class kamsController extends AppController{
 
 	public function index(){
 		$this->set('title_for_layout','かまった～');
-		$this->loadModel('Kamatta');
+		$this->loadModel('Kam');
 		$kams = $this->Kam->find('all');
 		$this->set('kams',$kams);
 

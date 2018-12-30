@@ -1,48 +1,51 @@
-﻿
-<h1>index Page</h1>
-<p>this is test View</p>
-<p>message:<?php echo $msg; ?></p>
-<p></p>
-<p>Data.</p>
-<div>
-	<ul>
-		<?php foreach($datas as $data): ?>
-		<li><?php echo $data; ?></li>
-		<?php endforeach; ?>
-	</ul>
-</div>
-<div>
-<p>ノーマルフォーム
-	<form method="post" action="sample/form" name="form1">
-		<div><input type="text" name="text1" id="text1"></div>
-		<div><input type="checkbox" name="check1" id="check1">
-			<label for="check1">check1</label></div>
-		<div><input type="radio" value="radio_A" name="radio1" id="radio_a">
-			<label for="radio_a">Radio A</label>
-			<input type="radio" value="radio_B" name="radio1" id="radio_b">
-			<label for="radio_b">Radio B</label>
-		</div>
-		<div><input type="submit" value="送る">
-	</form>
-</p>
-</div>
-<div>
-	<h1>Form Helper</h1>
-	<p><?php echo $result; ?></p>
-	<p><?php
-		echo $this->Form->create(false,array('type'=>'post','url'=>'index'));
-		echo $this->Form->label('text1',"message");
-		echo $this->Form->text('text1');
-		echo $this->Form->checkbox('check1');
-		echo $this->Form->label('check1',"checkbox1");
-		echo $this->Form->radio('radio1',
-			array('male'=>'男性',
-				'female'=>'女性'));
-		echo $this->Form->select('select1',
-			array("Mac"=>'マック',
-				"Windows"=>'ウィンドウズ',
-				"Linux"=>'リナックス'));
-		echo $this->Form->end("送信");
-	?></p>
+<div class="col-12" style="margin:10px;">
+	<h1>かまった</h1></br>
+	<p>MySampleData Index View</p></br>
+
+	<ul class="nav nav-tabs fixed-top nav-justified" style="background:grey;">
+   <li class="nav-item">
+ <a href="/okamanZ/" class="nav-link active">ぜん</a>
+   </li>
+   <li class="nav-item">
+ <a href="/okamanZ/kamattas" class="nav-link">かま友</a>
+   </li>
+   <li class="nav-item">
+ <a href="" class="nav-link">こみゅ１</a>
+   </li>
+   <li class="nav-item">
+ <a href="/okamanZ/Users" class="nav-link">こみゅ1２</a>
+   </li>
+ </ul>
+
+	<?php foreach($kams as $kam): ?>
+		<?php
+		echo "<div class='row'  id='kadomaruW'>";
+			echo "<div class='col-3'>";
+				echo $this->Html->image('testicon.jpg', array('id' => 'user_icon'));
+				echo "</br><p id='timestamp'>XX時間前</p>";
+			echo "</div>";
+			echo "<div class='col-8' style='margin:10px 0 0 0;'>";
+				echo "<strong>";
+				echo $kam['User']['name'];
+				echo "</strong></br>";
+				echo $kam['Kamatta']['body'];
+				echo "</br>";
+				echo "<div class='row'>";
+					echo "<button type='button' class='btn col-5' id='button_don'>どんだけ</button>";
+					echo "<button type='button' class='btn col-5' id='button_don'>コメント</button>";
+				echo "</div>";
+			echo "</div>";
+		echo "</div>";
+		;?>
+	<?php	endforeach;?>
 </div>
 
+<body style="padding-bottom:4.5rem;">
+  <nav class="navbar navbar-light fixed-bottom" style="background-color:rgba(0,0,0,0.6);" >
+		<?php
+			echo $this->Form->create('Kamatta');
+			echo $this->Form->hidden('users_id',array('value'=>$user['id']));
+			echo $this->Form->text('body',array('class' => 'form-control-sm col-9'));
+		 ?>
+		 <button type="submit" class="btn btn-primary col-2"><b> ♂ </b></button>
+  </nav>
