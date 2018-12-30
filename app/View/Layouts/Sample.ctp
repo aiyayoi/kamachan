@@ -45,10 +45,10 @@
     <a href="#">こみゅぅ～</a>
   </div>
   <div class="card-body">
-    <a href="/okamanZ/Users">まいぺーじ</a>
+    <a href="Users">まいぺーじ</a>
   </div>
   <div class="card-body">
-    <a href="/okamanZ/kamattas">といあわせ</a>
+    <a href="kamattas">といあわせ</a>
   </div>
 </div>
 </div>
