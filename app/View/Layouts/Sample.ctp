@@ -39,7 +39,7 @@
     <a href="/">ほ～む</a>
   </div>
   <div class="card-body">
-    <a href="/kamattas">かまった～</a>
+    <a href="kamattas">かまった～</a>
   </div>
   <div class="card-body">
     <a href="#">こみゅぅ～</a>
