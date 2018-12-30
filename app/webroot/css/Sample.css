@@ -135,8 +135,7 @@ pre{
 
 #button_don{
 	background:#f0f8ff;
-	padding:5px 10px;
-	margin:10px;
+	margin:5px;
 	border-radius: 3px;
 	box-shadow: 4px 4px 8px rgba(0,0,0,0.3);
   transition: .3s;
