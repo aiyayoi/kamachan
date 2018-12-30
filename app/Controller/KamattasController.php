@@ -4,6 +4,7 @@
 class kamattasController extends AppController{
 
 	public function index(){
+		$this->layout="Sample";
 		$this->set('title_for_layout','かまった～');
 		$this->loadModel('Kamatta');
 		$kams = $this->Kamatta->find('all');
