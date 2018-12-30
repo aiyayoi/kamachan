@@ -1,7 +1,7 @@
 <div class="col-12" style="margin:10px;">
 	<h1>かまった</h1></br>
 	<p>MySampleData Index View</p></br>
-
+<?php echo $user['id']; ?>
 	<ul class="nav nav-tabs fixed-top nav-justified" style="background:grey;">
    <li class="nav-item">
  <a href="/okamanZ/" class="nav-link active">ぜん</a>
