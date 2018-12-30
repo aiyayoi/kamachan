@@ -2,7 +2,7 @@
 	App::uses('AppModel','Model');
 
 
-class Kamatta extends AppModel{
+class Kam extends AppModel{
     public $belongsTo = array(
         'User' => array(
             'className' => 'User',
