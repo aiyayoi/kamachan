@@ -2,14 +2,23 @@
 	App::uses('AppController','Controller');
 
 class kamattasController extends AppController{
-	
+
 	public function index(){
 		$this->set('title_for_layout','かまった～');
 		$this->loadModel('Kamatta');
 		$kams = $this->Kamatta->find('all');
 		$this->set('kams',$kams);
+
+		if($this->request->is('post')){
+			$this->Kamatta->create();
+			if($this->Kamatta->save($this->request->data)){
+				$this->Flash->success('かきこ～');
+				return $this->redirect(array('action' => 'index'));
+			}
+			$this->Flash->error('エラー');
+		}
 	}
-	
+
 	public function write(){
 		$this->loadModel('Kamatta');
 		if($this->request->is('post')){
@@ -21,7 +30,7 @@ class kamattasController extends AppController{
 			$this->Flash->error('エラー');
 		}
 	}
-	
+
 	public function edit($id = null){
         $this->User->id = $id;
         if (!$this->User->exists()) {

@@ -1,12 +1,7 @@
 ﻿body {
-	background : #ffeeee;
-	color : #660000;
-	font-family : "lucida grande",verdana,helvetica,arial,sans-serif;
-	font-size : 90%;
-	margin : 0;
-}
-
-#container{
+	background : #ffe6eb;
+	color : #000;
+	font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 
 #header{
@@ -16,8 +11,15 @@
 }
 
 h1{
-	color : #660000;
+	color : #222f3e;
 	font-size : 18px;
+}
+
+strong{
+	font-size: 16px;
+}
+p{
+	font-size: 14px
 }
 
 #content {
@@ -48,17 +50,6 @@ pre{
 	margin:10px 20px 10px 20px;
 }
 
-div#leftmenu{
-	width:200px;
-	float:left;
-	margin:20px 0px 0px 0px;
-}
-
-div#main{
-	width:800px;
-	float:left;
-	margin:20px 220px 0px 0px;
-}
 @media screen and (max-width:640px){
 .footer_area {
     position: fixed;
@@ -104,4 +95,84 @@ div#main{
 #siteBottom{
 	margin-bottom: 85px;
 }
+
+.globalNav{
+	list-style: none;
+	overflow:hidden;
+}
+.globalNav li{
+	float:left;
+	border-right: 1px solid #DDD;
+}
+.globalNav li a{
+	display: block;
+	padding: :20px 30px;
+	text-align: center;
+	text-decoration: none;
+	color: #333;
+}
+.globalNav li a span{
+	display: block;
+	margin: 3px 0 0 0;
+	color: #AAA;
+	text-transform: uppercase;
+	font-size: 80%;
+	letter-spacing: 1px;
+}
+.globalNav li a:hover{
+	background: #EEE;
+}
+.globalNav li.active a{
+	background: #333;
+	color: #EEE;
+}
+
+#kadomaruW{
+	border-radius: 10px;
+	background: white;
+	margin:5px 0 0 0;
+}
+
+#button_don{
+	background:#f0f8ff;
+	padding:5px 10px;
+	margin:10px;
+	border-radius: 3px;
+	box-shadow: 4px 4px 8px rgba(0,0,0,0.3);
+  transition: .3s;
+}
+
+#user_icon{
+	width:100%;
+	margin:20px 0 0 0;
+	border-radius: 3px;
+	box-shadow: 4px 4px 8px rgba(0,0,0,0.3);
+	transition: .3s;
+}
+
+#timestamp{
+	align-self: center;
+	margin: 20px 0 0 0;
+}
+
+#maruboutton{
+	width:3rem;
+	height:3rem;
+	position: fixed;
+	  top: 85%;
+		right: 0;
+		bottom: 0;
+		left: 85%;
+	z-index:10000;
+	background: #a6e3e9;
+	filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.6));
+}
+
+.iro{
+	#ffe6eb;
+	#defcfc;
+	#cbf1f5;
+	#a6e3e9;
+}
+
 }

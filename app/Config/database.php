@@ -69,7 +69,6 @@ class DATABASE_CONFIG {
 	public $default = array(
 		'driver'   => 'postgres',
 		'datasource' => 'Database/Postgres',
-
 		'connect'  => 'pg_connect',
 		'persistent' => false,
 		'host' => 'ec2-174-129-41-12.compute-1.amazonaws.com',
@@ -82,13 +81,14 @@ class DATABASE_CONFIG {
 		//'encoding' => 'utf8',
 	);
 
-	public $test = array(
+//本番環境前にdeaultを上にする
+	public $default1 = array(
 		'datasource' => 'Database/Mysql',
 		'persistent' => false,
 		'host' => 'localhost',
-		'login' => 'user',
-		'password' => 'password',
-		'database' => 'test_database_name',
+		'login' => 'root',
+		'password' => '',
+		'database' => 'okamanz',
 		'prefix' => '',
 		//'encoding' => 'utf8',
 	);
