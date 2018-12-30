@@ -36,10 +36,10 @@
 <div class="card bg-light">
 <div class="card-header">めにゅ～</div>
   <div class="card-body">
-    <a href="/okamanZ">ほ～む</a>
+    <a href="/">ほ～む</a>
   </div>
   <div class="card-body">
-    <a href="/okamanZ/kamattas">かまった～</a>
+    <a href="/kamattas">かまった～</a>
   </div>
   <div class="card-body">
     <a href="#">こみゅぅ～</a>
