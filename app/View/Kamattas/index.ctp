@@ -1,5 +1,5 @@
 <div class="col-12" style="margin:10px;">
-	<h1>かまった～</h1></br>
+	<h1>かまった</h1></br>
 	<p>MySampleData Index View</p></br>
 
 	<ul class="nav nav-tabs fixed-top nav-justified" style="background:grey;">
