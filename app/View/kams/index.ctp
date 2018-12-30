@@ -2,6 +2,8 @@
 	<h1>かまった</h1></br>
 	<p>MySampleData Index View</p></br>
 <?php echo $user['id']; ?>
+<?php echo $user['username']; ?>
+
 	<ul class="nav nav-tabs fixed-top nav-justified" style="background:grey;">
    <li class="nav-item">
  <a href="/okamanZ/" class="nav-link active">ぜん</a>
@@ -43,7 +45,7 @@
 <body style="padding-bottom:4.5rem;">
   <nav class="navbar navbar-light fixed-bottom" style="background-color:rgba(0,0,0,0.6);" >
 		<?php
-			echo $this->Form->create('Kamatta');
+			echo $this->Form->create('Kam');
 			echo $this->Form->hidden('users_id',array('value'=>$user['id']));
 			echo $this->Form->text('body',array('class' => 'form-control-sm col-9'));
 		 ?>
