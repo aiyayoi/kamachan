@@ -36,19 +36,16 @@
 <div class="card bg-light">
 <div class="card-header">めにゅ～</div>
   <div class="card-body">
-    <a href="/">ほ～む</a>
+    <?php echo $this->html->link('ほ～む','/');?>
   </div>
   <div class="card-body">
-    <a href="Kamattas">かまった～</a>
+    <?php echo $this->html->link('かまった','/kams');?>
   </div>
   <div class="card-body">
-    <a href="#">こみゅぅ～</a>
+    <?php echo $this->html->link('こみゅ','/');?>
   </div>
   <div class="card-body">
-    <a href="Users">まいぺーじ</a>
-  </div>
-  <div class="card-body">
-    <a href="kamattas">といあわせ</a>
+    <?php echo $this->html->link('まいぺ～じ','/users');?>
   </div>
 </div>
 </div>

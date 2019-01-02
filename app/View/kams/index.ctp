@@ -4,34 +4,19 @@
 <?php echo $user['id']; ?>
 <?php echo $user['username']; ?>
 
-	<ul class="nav nav-tabs fixed-top nav-justified" style="background:grey;">
-   <li class="nav-item">
- <a href="/okamanZ/" class="nav-link active">ぜん</a>
-   </li>
-   <li class="nav-item">
- <a href="/okamanZ/kamattas" class="nav-link">かま友</a>
-   </li>
-   <li class="nav-item">
- <a href="" class="nav-link">こみゅ１</a>
-   </li>
-   <li class="nav-item">
- <a href="/okamanZ/Users" class="nav-link">こみゅ1２</a>
-   </li>
- </ul>
-
 	<?php foreach($kams as $kam): ?>
 		<?php
-		echo "<div class='row'  id='kadomaruW'>";
+		echo "<div class='row no-gutters'  id='kadomaruW'>";
 			echo "<div class='col-3'>";
 				echo $this->Html->image('testicon.jpg', array('id' => 'user_icon'));
 				echo "</br><p id='timestamp'>XX時間前</p>";
 			echo "</div>";
-			echo "<div class='col-8' style='margin:10px 0 0 0;'>";
+			echo "<div class='col-9' style='margin-top:10px;padding-right:5px; padding-left:10px;'>";
 				echo "<strong>";
 				echo $kam['User']['name'];
-				echo "</strong></br>";
+				echo "</strong></br><p>";
 				echo $kam['Kam']['body'];
-				echo "</br>";
+				echo "</p></br>";
 				echo "<div class='row'>";
 					echo "<button type='button' class='btn col-5 btn-sm' id='button_don'>どんだけ</button>";
 					echo "<button type='button' class='btn col-5 btn-sm' id='button_don'>コメント</button>";

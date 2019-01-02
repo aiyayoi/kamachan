@@ -19,7 +19,7 @@ strong{
 	font-size: 16px;
 }
 p{
-	font-size: 14px
+	font-size: 13px
 }
 
 #content {
@@ -133,6 +133,12 @@ pre{
 	margin:5px 0 0 0;
 }
 
+#kadomaruB{
+	border-radius: 10px;
+	background: #defcfc;
+	margin:5px 0 0 0;
+}
+
 #button_don{
 	background:#f0f8ff;
 	margin:5px;
@@ -167,6 +173,8 @@ pre{
 	background: #a6e3e9;
 	filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.6));
 }
+
+
 
 .iro{
 	#ffe6eb;

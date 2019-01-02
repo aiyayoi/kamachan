@@ -6,7 +6,7 @@ class kamsController extends AppController{
 	public function index(){
 		$this->set('title_for_layout','かまった～');
 		$this->loadModel('Kam');
-		$kams = $this->Kam->find('all');
+		$kams = $this->Kam->find('all', array('order' => array('Kam.id DESC')));
 		$this->set('kams',$kams);
 
 		if($this->request->is('post')){
