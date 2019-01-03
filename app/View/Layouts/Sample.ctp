@@ -49,7 +49,7 @@
                                   array(
                                     'controller' => '/users',
                                     'action' => 'index',
-                                    'parameter' => ''));?>
+                                    ));?>
   </div>
 </div>
 </div>
