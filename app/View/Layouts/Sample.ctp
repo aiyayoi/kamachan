@@ -19,13 +19,12 @@
 		echo $this->Html->css('Sample');
     echo $this->Html->css('clingify');
     echo $this->Html->script('jquery.clingify.js');
+    echo $this->Html->script('ofi.min.js');
 		echo $scripts_for_layout;
 	?>
-  <script type="text/javascript">
-//  jQuery(function() {
-//  jQuery('nav').clingify();
-});
-</script>
+  <script>
+    objectFitImages();
+  </script>
 </head>
 <body style="padding-top:2.5rem;">
 

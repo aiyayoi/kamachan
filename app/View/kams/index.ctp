@@ -5,7 +5,7 @@
 		<?php
 		echo "<div class='row no-gutters'  id='kadomaruW'>";
 			echo "<div class='col-3' style='padding:10px;'>";
-				echo $this->Html->image('/users/showimage/' .$kam['User']['id'], array('id' => 'user_icon'));
+				echo $this->Html->image('/users/showimage/' .$kam['User']['id'], array('id' => 'user_icon','class'=>'object-fit-img'));
 				echo "</br><p id='timestamp'>XX時間前</p>";
 			echo "</div>";
 			echo "<div class='col-9' style='margin-top:10px;padding-right:5px; padding-left:10px;'>";

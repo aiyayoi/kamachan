@@ -148,10 +148,12 @@ pre{
 }
 
 #user_icon{
-	width:100%;
+	width:63px;
+	height: 63px;
 	border-radius: 3px;
 	box-shadow: 4px 4px 8px rgba(0,0,0,0.3);
 	transition: .3s;
+	object-fit: contain;
 }
 
 #timestamp{
@@ -173,7 +175,10 @@ pre{
 	filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.6));
 }
 
-
+.object-fit-img {
+  object-fit: contain;
+  font-family: 'object-fit: contain;'
+}
 
 .iro{
 	#ffe6eb;
