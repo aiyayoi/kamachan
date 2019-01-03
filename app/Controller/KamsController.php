@@ -50,6 +50,17 @@ class kamsController extends AppController{
         }
     }
 
+		public function showimage($userid) {
+			$this->loadmodel('Icon');
+	    $usersIcon = $this->Icon->findByUserId($userid);
+			if($usersIcon){
+				header('Content-type: image/jpeg');
+	    	echo $usersIcon['Icon']['image'];
+			}else{
+				header('Content-type: image/jpeg');
+				readfile('img/defoIcon.png');
+			}
+	  }
 
 }
 ?>

@@ -1,14 +1,11 @@
-<div class="col-12" style="margin:10px;">
+<div class="col-12">
 	<h1>かまった</h1></br>
-	<p>MySampleData Index View</p></br>
-<?php echo $user['id']; ?>
-<?php echo $user['username']; ?>
 
 	<?php foreach($kams as $kam): ?>
 		<?php
 		echo "<div class='row no-gutters'  id='kadomaruW'>";
-			echo "<div class='col-3'>";
-				echo $this->Html->image('testicon.jpg', array('id' => 'user_icon'));
+			echo "<div class='col-3' style='padding:10px;'>";
+				echo $this->Html->image('/users/showimage/' .$kam['User']['id'], array('id' => 'user_icon'));
 				echo "</br><p id='timestamp'>XX時間前</p>";
 			echo "</div>";
 			echo "<div class='col-9' style='margin-top:10px;padding-right:5px; padding-left:10px;'>";
@@ -17,7 +14,7 @@
 				echo "</strong></br><p>";
 				echo $kam['Kam']['body'];
 				echo "</p></br>";
-				echo "<div class='row'>";
+				echo "<div class='row' style='margin-top:-30px; padding-bottom:10px;'>";
 					echo "<button type='button' class='btn col-5 btn-sm' id='button_don'>どんだけ</button>";
 					echo "<button type='button' class='btn col-5 btn-sm' id='button_don'>コメント</button>";
 				echo "</div>";

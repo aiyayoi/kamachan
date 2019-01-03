@@ -45,7 +45,11 @@
     <?php echo $this->html->link('こみゅ','/');?>
   </div>
   <div class="card-body">
-    <?php echo $this->html->link('まいぺ～じ','/users');?>
+    <?php echo $this->html->link('まいぺ～じ',
+                                  array(
+                                    'controller' => '/users',
+                                    'action' => 'index',
+                                    'parameter' => ''));?>
   </div>
 </div>
 </div>
@@ -53,7 +57,7 @@
 
 
   <div class="container-fluid">
-    <div class="row">
+    <div class="row no-gutters">
       <?php echo $this->Session->flash(); ?>
       <?php echo $content_for_layout; ?>
     </div>

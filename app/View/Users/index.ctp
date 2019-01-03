@@ -1,12 +1,55 @@
 <div class="col-12">
-  <h1>まいぺ～じ</h1></br>
 
-  ログイン済み：<?php print(h($user['username'])); ?>さん<br />
-  <?php print($this->Html->link('ログアウト', 'logout')); ?>
+  <!-- モーダルの設定 -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">アイコンの変更</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="閉じる">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <?php
+            echo $this->form->create('Icon',array('type' => 'file'));
+            echo $this->form->input('image',array('type' => 'file', 'label' => 'アイコン'));
+            ?>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる</button>
+          <button type="submit" class="btn btn-primary">変更を保存</button>
+        </div><!-- /.modal-footer -->
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
 
-  <div class="row" id="kadomaruB">
-    <div
+  <div class="col-12 clearfix">
+    <div class="float-right">
+      <button type='button' class='btn col-12 btn-sm'
+       style="background: #defcfc; margin-bottom:-10px;">編集</button>
+    </div>
+  </div>
+  <div class="row no-gutters" id="kadomaruB"  style="padding:10px;">
+    <button type="button" class="btn col-4" data-toggle="modal" data-target="#myModal">
+      <?php echo $this->Html->image('/users/showimage/' .$user['id'], array('id' => 'user_icon')); ?>
+    </button>
+    <div class="col-8" style="padding-left:10px; margin-bottom:10px;">
+    <strong><?php echo $user['name'] ;?></strong>
+    </br>
+    紹介文紹介文紹介うぶんしょうかいぶんしょう
+    </div>
+    <button type='button' class='btn col-5 btn-sm' id='button_don'>増どんだけ1000</button>
+    <div class="col-1"></div>
+    <button type='button' class='btn col-5 btn-sm' id='button_don'>✍こめんと5000</button>
+  </div>
 
+  <div class="row no-gutters" id="kadomaruW"  style="padding:10px;">
+    かまての未読コメント
+  </div>
+
+  <div class="row no-gutters" id="kadomaruW"  style="padding:10px;">
+    コメントして返信未読
   </div>
 
 
