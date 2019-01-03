@@ -57,8 +57,8 @@
       </div>
       <div class="modal-body">
         <?php
-          echo $this->form->create('Icon',array('type' => 'file'));
-          echo $this->form->input('image',array('type' => 'file', 'label' => 'アイコン'));
+          echo $this->Form->create('Icon',array('type' => 'file'));
+          echo $this->Form->input('image',array('type' => 'file', 'label' => 'アイコン'));
           ?>
       </div>
       <div class="modal-footer">
