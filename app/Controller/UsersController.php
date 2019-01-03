@@ -10,9 +10,6 @@ class UsersController extends AppController{
     $usersIcon = $this->Icon->findByUserId($user['id']);
     $this->set('hasUsersIcon', isset($usersIcon['Icon']['image']) ? true : false);
 
-		$this->loadmodel('Icon');
-		$this->set('a',$usersIcon);
-
     if (!$this->request->is('post')) {
 			return;
 		}
