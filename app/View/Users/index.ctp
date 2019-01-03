@@ -1,7 +1,5 @@
 <div class="col-12">
 
-
-
   <div class="col-12 clearfix">
     <div class="float-right">
       <button type='button' class='btn col-12 btn-sm'
@@ -45,5 +43,28 @@
         array('class' => 'btn btn-success col-5', 'role' => 'button')
     ); ?>
   </nav>
-
+</body>
 </div>
+<!-- モーダルの設定 -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">アイコンの変更</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="閉じる">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <?php
+          echo $this->form->create('Icon',array('type' => 'file'));
+          echo $this->form->input('image',array('type' => 'file', 'label' => 'アイコン'));
+          ?>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる</button>
+        <button type="submit" class="btn btn-primary">変更を保存</button>
+      </div><!-- /.modal-footer -->
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
