@@ -66,7 +66,7 @@
  */
 class DATABASE_CONFIG {
 
-	public $default1 = array(
+	public $default = array(
 		'driver'   => 'postgres',
 		'datasource' => 'Database/Postgres',
 		'connect'  => 'pg_connect',
@@ -82,7 +82,7 @@ class DATABASE_CONFIG {
 	);
 
 //本番環境前にdeaultを上にする
-	public $default = array(
+	public $default1 = array(
 		'datasource' => 'Database/Mysql',
 		'persistent' => false,
 		'host' => 'localhost',
