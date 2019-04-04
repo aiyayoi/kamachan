@@ -25,6 +25,7 @@
 </div>
 
 <body style="padding-bottom:4.5rem;">
+	<?php if($user['id']): ?>
   <nav class="navbar navbar-light fixed-bottom" style="background-color:rgba(0,0,0,0.6);" >
 		<?php
 			echo $this->Form->create('Kam');
@@ -33,3 +34,18 @@
 		 ?>
 		 <button type="submit" class="btn btn-primary col-2"><b> ♂ </b></button>
   </nav>
+	<?php else: ?>
+   <nav class="navbar navbar-light fixed-bottom" style="background-color:rgba(0,0,0,0.6);" >
+    <?php echo $this->Html->link(
+        'ろぐいん',
+        array('controller' => 'users', 'action' => 'login'),
+        array('class' => 'btn btn-primary col-5', 'role' => 'button')
+    ); ?>
+
+    <?php echo $this->Html->link(
+        'おかま登録',
+        array('controller' => 'users', 'action' => 'singup'),
+        array('class' => 'btn btn-success col-5', 'role' => 'button')
+    ); ?>
+  </nav>
+	<?php endif ;?>
